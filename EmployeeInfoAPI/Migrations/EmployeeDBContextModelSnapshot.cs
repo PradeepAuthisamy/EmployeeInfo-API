@@ -43,7 +43,7 @@ namespace EmployeeInfoAPI.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("EmployeeInfo");
+                    b.ToTable("EmployeeInformation");
                 });
 #pragma warning restore 612, 618
         }

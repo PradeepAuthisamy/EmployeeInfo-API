@@ -22,14 +22,14 @@ namespace EmployeeInfoAPI.Controllers
         [HttpGet("GetEmployeeInfo")]
         public async Task<IActionResult> GetEmployeeInfo()
         {
-            var employeeInfo = await _employeeDBContext.EmployeeInfo.ToListAsync();
+            var employeeInfo = await _employeeDBContext.EmployeeInformation.ToListAsync();
             return Ok(employeeInfo);
         }
 
         [HttpPost("CreateEmployee")]
         public async Task<IActionResult> CreateEmployeeInfo([FromBody] EmployeeInfo employeeInfo)
         {
-            await _employeeDBContext.EmployeeInfo.AddAsync(employeeInfo);
+            await _employeeDBContext.EmployeeInformation.AddAsync(employeeInfo);
             await _employeeDBContext.SaveChangesAsync();
             return Ok(employeeInfo);
         }

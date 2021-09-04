@@ -9,6 +9,6 @@ namespace EmployeeInfoAPI.DataAccess
         {
         }
 
-        public DbSet<EmployeeInfo> EmployeeInfo { get; set; }
+        public DbSet<EmployeeInfo> EmployeeInformation { get; set; }
     }
 }

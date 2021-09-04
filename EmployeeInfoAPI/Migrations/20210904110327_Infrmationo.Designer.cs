@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmployeeInfoAPI.Migrations
 {
     [DbContext(typeof(EmployeeDBContext))]
-    [Migration("20210904085458_EmployeeInfo")]
-    partial class EmployeeInfo
+    [Migration("20210904110327_Infrmationo")]
+    partial class Infrmationo
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -45,7 +45,7 @@ namespace EmployeeInfoAPI.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("EmployeeInfo");
+                    b.ToTable("EmployeeInformation");
                 });
 #pragma warning restore 612, 618
         }

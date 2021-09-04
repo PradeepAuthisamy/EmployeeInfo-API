@@ -2,12 +2,12 @@
 
 namespace EmployeeInfoAPI.Migrations
 {
-    public partial class EmployeeInfo : Migration
+    public partial class Infrmationo : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "EmployeeInfo",
+                name: "EmployeeInformation",
                 columns: table => new
                 {
                     ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -20,14 +20,14 @@ namespace EmployeeInfoAPI.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EmployeeInfo", x => x.ID);
+                    table.PrimaryKey("PK_EmployeeInformation", x => x.ID);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "EmployeeInfo");
+                name: "EmployeeInformation");
         }
     }
 }
